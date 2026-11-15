@@ -1,0 +1,51 @@
+{
+  "models": {
+    "Keras FP32": {
+      "size_mb": 10.03,
+      "accuracy": 0.9817596566523605,
+      "healthy_recall": 0.9943181818181818,
+      "healthy_called_disease": 1,
+      "late_blight_recall": 0.9696132596685083,
+      "late_blight_called_healthy": 5,
+      "ms_per_image_cpu": null
+    },
+    "TFLite FP32": {
+      "size_mb": 3.76,
+      "accuracy": 0.9817596566523605,
+      "healthy_recall": 0.9943181818181818,
+      "healthy_called_disease": 1,
+      "late_blight_recall": 0.9723756906077348,
+      "late_blight_called_healthy": 4,
+      "ms_per_image_cpu": 3.1
+    },
+    "TFLite dynamic-range": {
+      "size_mb": 1.13,
+      "accuracy": 0.9817596566523605,
+      "healthy_recall": 0.9943181818181818,
+      "healthy_called_disease": 1,
+      "late_blight_recall": 0.9668508287292817,
+      "late_blight_called_healthy": 4,
+      "ms_per_image_cpu": 5.7
+    },
+    "TFLite full INT8": {
+      "size_mb": 1.24,
+      "accuracy": 0.9012875536480687,
+      "healthy_recall": 0.8920454545454546,
+      "healthy_called_disease": 19,
+      "late_blight_recall": 0.8121546961325967,
+      "late_blight_called_healthy": 19,
+      "ms_per_image_cpu": 14.9
+    }
+  },
+  "real_world": {},
+  "deployed": "TFLite dynamic-range",
+  "green_head_co2_kg": 0.0018693594843585625,
+  "green_total_co2_kg": 0.003726607453463591,
+  "baseline": {
+    "name": "ResNet50 (baseline, head only)",
+    "accuracy": 0.9570815450643777,
+    "params_millions": 23.59,
+    "approx_fp32_size_mb": 94.4,
+    "co2_kg": 0.0013883396238533149
+  }
+}
