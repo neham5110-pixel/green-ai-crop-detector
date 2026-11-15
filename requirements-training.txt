@@ -1,0 +1,6 @@
+# Only needed to re-run the notebook locally. On Google Colab, the first notebook cell installs what is missing.
+tensorflow>=2.16
+scikit-learn
+codecarbon
+kagglehub
+pandas

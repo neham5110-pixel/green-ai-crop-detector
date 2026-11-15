@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+# datasets are large: never commit them
+crop_data/
+extra_raw/
+extra_data/
+real_world_test/
+# big training artefacts (the small deploy model IS committed)
+model/leaf_disease_fp32.keras
+model/*_fp32.tflite
+model/*_int8.tflite
+*.zip

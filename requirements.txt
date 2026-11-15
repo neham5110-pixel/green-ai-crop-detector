@@ -1,0 +1,5 @@
+streamlit>=1.40
+numpy>=1.26
+pillow>=10.0
+requests>=2.31
+ai-edge-litert>=1.0
